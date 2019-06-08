@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thanhnguyen0612/thanh-reactjs/issues"
   },
-  "homepage": "https://github.com/thanhnguyen0612/thanh-reactjs#readme"
+  "homepage": "https://github.com/thanhnguyen0612/thanh-reactjs#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
 }
