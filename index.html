@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shop by Thanh</title>
-</head>
-<body>
-    <p>Hello Thanh</p>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <form>
+      Ten product:
+      <input
+        id="searchProductName"
+        type="text"
+        name="inputProductName"
+        value=""
+      />
+      Trang:
+      <input
+        id="searchPage"
+        type="number"
+        min="1"
+        name="inputPageNumber"
+        value="1"
+      />
+      <input
+        id="searchBtn"
+        class="button serchBtn"
+        type="submit"
+        value="Search"
+      />
+    </form>
+    <br /><br />
+    <table id="sampleTable" border="1">
+      <tr id="title">
+        <th>Ten San Pham</th>
+        <th>Gia tien (VND)</th>
+        <th>Gia khuyen mai (VND)</th>
+        <th>Giam gia (%)</th>
+        <th>Chi tiết</th>
+      </tr>
+    </table>
+
+    <p id="notFound" style="display: none">Không tìm thấy sản phẩm</p>
+    <br />
+    <button id="lowToHigh" class="button">Low to high</button>
+    <button id="highToLow" class="button">High to low</button>
+    <button id="aToZ" class="button">A-Z</button>
+    <button id="zToA" class="button">Z-A</button>
+    <button id="filterBigSale" class="button">Big sale</button>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
